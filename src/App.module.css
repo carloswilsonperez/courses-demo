@@ -1,0 +1,266 @@
+.app {
+  text-align: center;
+  display: flex;
+  background-color: rgba(228, 236, 236, 0.442);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.navigator {
+  width: 20%;
+  margin: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.navigator-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.navigator-controls > div {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.navigator-controls-plus {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.navigator-controls-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+  background-color: rgb(221, 245, 231);
+  color: rgb(104, 182, 104);
+  font-size: 15px;
+  font-weight: 700;
+  width: 160px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.navigator-controls-button:focus {
+  outline: none;
+}
+
+.disabled-button {
+  border-color: gray;
+  border-radius: 20px;
+  background-color: rgb(225, 220, 220);
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 160px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.details {
+  width: 80%;
+  margin: 20px;
+  margin-left: 10px;
+}
+
+.course-input-container {
+  display: flex;
+}
+
+.course-lesson-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.course-input {
+  border-color: #cdcdcd;
+  border-radius: 5px;
+  flex: 1;
+  color: gray;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  -webkit-box-shadow:inset 0 0 2px #000;
+       -moz-box-shadow:inset 0 0 2px #000;
+            box-shadow:inset 0 0 2px #000;
+  padding: 0 10px;
+}
+
+.course-input:focus {
+  outline: none;
+}
+
+.card {
+  display: flex;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.cardTopic {
+  display: flex;
+  height: 70px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.card-body {
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-shadow:inset 0 0 2px #000;
+  -moz-box-shadow:inset 0 0 2px #000;
+       box-shadow:inset 0 0 2px #000;
+  flex: 1;
+  padding: 2px 0;
+}
+
+.card-chevron-icon {
+  display: flex;
+  align-items: center;
+}
+
+.card-menu-icon-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.card-menu-icon {
+  font-size: 14px !important;
+  font-weight: 400;
+  color: gray;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex : 1;
+  color: gray;
+}
+
+.card-content-disabled {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  flex : 1;
+  flex-wrap: wrap;
+  color: gray;
+  cursor: not-allowed;
+}
+
+.card-content-header {
+  text-align: left;
+  flex: 40;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.card-content-header-badge {
+  margin-right: 20px;
+}
+
+.card-content-header-selected {
+  color: rgb(87, 144, 230);
+}
+
+.card-content-title {
+  flex: 55;
+  line-height: 26px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.card-content-title-selected {
+  color: rgb(87, 144, 230);
+  flex: 55;
+  line-height: 26px;
+  text-align: left;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.switch {
+  height: 25px;
+  margin-left: 20px;
+}
+
+.switch > input {
+  display: none;
+}
+
+.switch-container {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background: white;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color .2s;
+}
+
+.react-switch-label-icon {
+  background-color: transparent;
+  border-radius: 25;
+  font-size: 22px;
+}
+
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  transition: 0.2s;
+  background: greenyellow;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+  width: 25px;
+}
