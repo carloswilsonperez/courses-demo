@@ -27,7 +27,7 @@ class Card extends Component {
         {activeState ? <ExpandMoreIcon style={{ color: 'gray'}}/> : <NavigateNextIcon style={{ color: 'gray'}}/>}
         </div>}
         <div className={styles['card-body']} onClick={() => this.updateState(type, id)}>
-        <div className={styles['card-menu-icon-container']}>
+        <div className={isOn ? styles['card-menu-icon-container'] : styles['card-menu-icon-container-disabled']}>
           <MenuIcon className={styles['card-menu-icon']}/>
         </div>
         <div className={isOn ? styles['card-content'] : styles['card-content-disabled']}>
