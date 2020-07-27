@@ -50,7 +50,7 @@ class Navigator extends Component {
             />
           </div>
           <div className={styles['course-input-container']}>
-            <input type="text" className={styles['course-input']} defaultValue={courseTitle} disabled={!isOn} />
+            <input type="text" className={styles['course-input']} defaultValue={courseTitle} disabled={!isOn} readOnly />
           </div>
           <div className={styles['course-lesson-body']}>
           { modules && modules.length > 0 &&
